@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
+    <folder id="0" name="mutator_spider_leader">
+        <file id="0" name="mutator_spider_leader/mutator_spider_leader.png" width="256" height="256" pivot_x="0.074359" pivot_y="0.152985"/>
+    </folder>
+    <entity id="0" name="mutator_spider_leader">
+        <animation id="0" name="idle" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="mutator_spider_leader">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="-82.612575" y="-0.202318" pivot_x="0.07686" pivot_y="0.255889" angle="0" scale_x="0.830492" scale_y="0.830492"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>
