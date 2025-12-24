@@ -4,6 +4,8 @@ local Assets = {
     Asset("Assets", "anim/spider_flag.zip"),
     Asset("ATLAS", "images/inventoryimages/spider_flag.xml"),
     Asset("IMAGE", "images/inventoryimages/spider_flag.tex"),
+    Asset("ATLAS", "images/inventoryimages/spider_flag_mapicon.xml"),
+    Asset("IMAGE", "images/inventoryimages/spider_flag_mapicon.tex"),
 }
 local prefabs =
 {
@@ -107,6 +109,7 @@ local function fn()
     inst.entity:AddTransform()
     inst.entity:AddAnimState()
     inst.entity:AddNetwork()
+    inst.entity:AddMiniMapEntity()
 
     MakeInventoryPhysics(inst)
 
@@ -115,9 +118,8 @@ local function fn()
     inst.AnimState:PlayAnimation("idle")
 
     MakeInventoryFloatable(inst,"med", 0.05,{0.65, 0.5, 0.65 })
-
-    local minimap = inst.entity:AddMiniMapEntity()
-    minimap:SetIcon("spider_flag.tex")
+    
+    inst.MiniMapEntity:SetIcon("spider_flag_mapicon.tex")
 
     inst:AddTag("spider_flag")
     inst:AddTag("irreplaceable")

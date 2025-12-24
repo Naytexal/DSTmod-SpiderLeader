@@ -22,6 +22,11 @@ Assets =
     Asset("IMAGE", "images/inventoryimages/spider_leader_whistle0.tex"),
     Asset("ATLAS", "images/inventoryimages/spider_flag.xml"),
     Asset("IMAGE", "images/inventoryimages/spider_flag.tex"),
+    
+    Asset("ATLAS", "images/spider_flag_mapicon.xml"),
+    Asset("IMAGE", "images/spider_flag_mapicon.tex"),
+    Asset("ATLAS", "images/inventoryimages/spider_flag_mapicon.xml"),
+    Asset("IMAGE", "images/inventoryimages/spider_flag_mapicon.tex"),
 
     Asset("ANIM", "anim/mutator_spider_leader.zip"),
     Asset("ANIM", "anim/spider_flag.zip"),
@@ -29,7 +34,7 @@ Assets =
     Asset("ANIM", "anim/flowers_fx.zip"),
 }
 
-AddMinimapAtlas("images/inventoryimages/spider_flag.xml")
+AddMinimapAtlas("images/inventoryimages/spider_flag_mapicon.xml")
 
 PrefabFiles = {
     "spider_leader",
